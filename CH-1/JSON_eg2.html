@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a={
+            "division1":{
+                "name":["x","p","a","y","n"],
+                "age":[10,20,11,10,12,2]
+            },
+            "division2":{
+                "name":["t","b","f","v","m"],
+                "age":[11,12,10,11,12,7,5]
+            }
+        }
+        var d1=a.division1.name
+        var d2=a.division2.name
+        var ans=d1.concat(d2).sort()
+        console.log(ans)
+        for(i of ans){
+            document.write(`<h2>Student ${i} </h2>`)
+        }
+        var a1=a.division1.age
+        var a2=a.division2.age
+        var ans1=a1.concat(a2).sort((a,b)=>a-b)
+        console.log(ans1)
+    </script>
+</body>
+</html>

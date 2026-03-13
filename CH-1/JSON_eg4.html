@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">Click Here</button>
+    <h2 id="b"></h2>
+    <h2 id="c"></h2>
+    <h3 id="d"></h3>
+    <script>
+        var obj=`{"name":"Dhriti","age":10,"dob":"2010-02-24"}`
+        function fun(){
+            let j=document.getElementById("b")
+            let k=document.getElementById("c")
+            let l=document.getElementById("d")
+            var d=JSON.parse(obj)
+            d.age=5
+            d["name"]="dhyan"
+            j.innerHTML="Name is:"+d.name
+            k.innerHTML="Age is:"+d.age
+            l.innerHTML="DOB is:"+d.dob
+        }
+    </script>
+</body>
+</html>
