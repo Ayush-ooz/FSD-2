@@ -1,0 +1,11 @@
+var fs=require("fs")
+//fs.mkdirSync("fs")
+fs.writeFileSync("fs/my.txt","B2 Students")
+fs.appendFileSync("fs/my.txt","\nNode JS tutorial")
+fs.writeFileSync("fs/mynew.txt","JSON completed")
+var r1=fs.readFileSync("fs/my.txt","utf-8")
+fs.appendFileSync("fs/mynew.txt","\n"+r1)
+var r2=fs.readFileSync("fs/mynew.txt","utf-8")
+console.log(r2)
+fs.unlinkSync("fs/mynew.txt")
+

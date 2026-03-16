@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Show Calculation</h1>
+    <h3 id="a"></h3>
+    <script>
+        var x=2
+        var y=4
+        setInterval(()=>{
+           var a=document.getElementById("a").innerHTML=`Addition is:${++x + ++y}` 
+        },2000)
+    </script>
+</body>
+</html>
