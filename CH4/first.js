@@ -1,0 +1,15 @@
+var express =require("express")
+var app=express()
+app.get("/",(req,res)=>{
+   // res.set("content-type","text/html")
+   //res.setHeader("Content-Type","text/html")
+   res.type("text/html")
+    res.write(`<h3>Hello B2 Students!</h3>`)
+    res.send()
+})
+app.get("/about",(req,res)=>{
+    res.write(`<h3>Hi</h3>`)
+    res.send()
+    //res.send("<h3>About Page</h3>")
+})
+app.listen(7008,()=>{console.log("Server Started")})
