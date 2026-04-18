@@ -1,0 +1,19 @@
+h1{
+    color: purple;
+    font-size: 55px;
+    text-align: center;
+}
+img{
+    display: block;
+    margin:auto;
+}
+input{
+    background-color: lightblue;
+}
+textarea{
+    background-color: tomato;
+    color: black;
+}
+form{
+    border: 2px solid black;
+}
