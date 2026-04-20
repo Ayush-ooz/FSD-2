@@ -1,0 +1,13 @@
+var express=require("express")
+var app=express()
+var cp=require("cookie-parser")
+app.use(cp())
+app.get("/",(req,res)=>{
+    res.cookie("fname","abc")
+    res.cookie("lname","xyz")
+    res.cookie("subject","FSD2",{maxAge:5000})
+    res.cookie("email","abc@gmail.com",{expires:new Date(Date.now()+10000)})
+    res.clearCookie("fname")
+    res.send(req.cookies.fname)
+})
+app.listen(5009)
