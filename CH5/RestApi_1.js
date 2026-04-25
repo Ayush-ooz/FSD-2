@@ -1,0 +1,5 @@
+var express=require("express")
+var app=express()
+var api=require("./RestApi_1.1")
+app.use("/RestApi_1.1",api)
+app.listen(7001)
