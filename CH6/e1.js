@@ -1,0 +1,10 @@
+// EJS(Embedded Java Script)
+var express=require("express")
+var app=express()
+var path=require("path")
+app.set("view engine","ejs")
+//app.set("views",path.join(__dirname,"views"))
+app.get("/",(req,res)=>{
+    res.render("e1")
+})
+app.listen(7005)
